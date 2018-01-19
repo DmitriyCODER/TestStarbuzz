@@ -9,13 +9,13 @@ type
     FDescription:string;
   public    
     constructor Create;
-    function GetDescription:string;
+    function GetDescription:string; virtual;
     function Cost:Double; virtual; abstract;
   end;
 
   TCondimentDecorator=class(TBeverage)
   public
-    function GetDescription:string; virtual; abstract;  
+    function GetDescription:string; override;
   end;
 
 
@@ -31,6 +31,13 @@ end;
 function TBeverage.GetDescription: string;
 begin
   Result:=FDescription;
+end;
+
+{ TCondimentDecorator }
+
+function TCondimentDecorator.GetDescription: string;
+begin
+
 end;
 
 end.

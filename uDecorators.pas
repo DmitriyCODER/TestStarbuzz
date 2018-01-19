@@ -39,7 +39,7 @@ implementation
 
 function TMocha.Cost: Double;
 begin
-  inherited;
+  //inherited;
   Result:=0.20 + FBeverage.Cost;
 end;
 
@@ -50,6 +50,7 @@ end;
 
 function TMocha.GetDescription: string;
 begin
+  //inherited;
   Result:=FBeverage.GetDescription+', Mocha';
 end;
 
@@ -68,6 +69,7 @@ end;
 
 function TSoy.GetDescription: string;
 begin
+  //inherited;
   Result:=FBeverage.GetDescription+', Soy';
 end;
 
@@ -86,6 +88,7 @@ end;
 
 function TWhip.GetDescription: string;
 begin
+  //inherited;
   Result:=FBeverage.GetDescription+', Whip';
 end;
 
