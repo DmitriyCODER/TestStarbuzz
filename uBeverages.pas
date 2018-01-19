@@ -18,6 +18,18 @@ type
     function Cost:Double;override;
   end;
 
+  TDarkRoast=class(TBeverage)
+  public
+    constructor Create;
+    function Cost:Double;override;
+  end;
+
+  TDecaf=class(TBeverage)
+  public
+    constructor Create;
+    function Cost:Double;override;
+  end;
+
 implementation
 
 { TEspresso }
@@ -44,6 +56,32 @@ end;
 constructor THouseBlend.Create;
 begin
   FDescription:='House blend Coffee';
+end;
+
+{ TDecaf }
+
+function TDecaf.Cost: Double;
+begin
+  inherited;
+  Result:=1.05;
+end;
+
+constructor TDecaf.Create;
+begin
+  FDescription:='Decaf';
+end;
+
+{ TDarkRoast }
+
+function TDarkRoast.Cost: Double;
+begin
+  inherited;
+  Result:=0.99;
+end;
+
+constructor TDarkRoast.Create;
+begin
+  FDescription:='Dark Roast Coffee';
 end;
 
 end.
