@@ -13,6 +13,11 @@ type
     function Cost:Double; virtual; abstract;
   end;
 
+  TCondimentDecorator=class(TBeverage)
+  public
+    function GetDescription:string; virtual; abstract;  
+  end;
+
 
 implementation
 
