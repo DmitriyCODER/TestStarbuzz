@@ -3,7 +3,8 @@ program TestStarbuzz;
 uses
   Forms,
   main in 'main.pas' {Form1},
-  uBeverage in 'uBeverage.pas';
+  uBeverage in 'uBeverage.pas',
+  uBeverages in 'uBeverages.pas';
 
 {$R *.res}
 

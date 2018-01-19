@@ -5,9 +5,9 @@ interface
 type
 
   TBeverage=class
-  private
+  protected
     FDescription:string;
-  public
+  public    
     constructor Create;
     function GetDescription:string;
     function Cost:Double; virtual; abstract;
